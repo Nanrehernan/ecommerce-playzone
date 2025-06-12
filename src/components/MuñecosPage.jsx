@@ -1,0 +1,133 @@
+import React from 'react'
+import Card from "@/components/Card"
+
+const datosMunecos = [
+    {
+        image: 'https://cdn.shopk.it/usercontent/dream-pop-world/media/images/83e7c82-124532-figura-dragon-ball-z-solid-edge-works-vol15-frieza-pvc-16cm-banpresto.jpg',
+        title: 'Freezer',
+        description: 'Dragon Ball Z',
+        price: '$500'
+    },
+    {
+        image: 'https://scontent-eze1-1.xx.fbcdn.net/v/t1.6435-9/42738389_1864879556915155_1759146148343316480_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=telVt6yYOj4Q7kNvwGN2h9b&_nc_oc=AdmzSutS-nrirteOrdF9bTX4XfPgzcq4WwMOqYKD_1UzjTyagaoHOFtdlmUSJwxR5Sw&_nc_zt=23&_nc_ht=scontent-eze1-1.xx&_nc_gid=z4VCGsGipuF6paBZIwk37w&oh=00_AfN_8qYb2LSG8sfyCjV1ESjllzKCheKcOwWeS1TRp5STxg&oe=68715AD9',
+        title: 'Goku Ultra instinto',
+        description: 'Dragon Ball Z',
+        price: '$600',
+    },
+    {
+        image: 'https://images.fravega.com/f300/de34d89d7fb3890d733d64053cdcb995.jpg.webp',
+        title: 'Vegeta SS Blue',
+        description: 'Dragon Ball Z',
+        price: '$500',
+    },
+        {
+        image: 'https://http2.mlstatic.com/D_NQ_NP_2X_650090-MLU74116372782_012024-F.webp',
+        title: 'Goku',
+        description: 'Dragon Ball Z',
+        price: '$500',
+    },
+    {
+        image: 'https://http2.mlstatic.com/D_NQ_NP_891822-MLA75468072265_032024-O.webp',
+        title: 'Bardock',
+        description: 'Dragon Ball Z',
+        price: '$600',
+    },
+    {
+        image: 'https://http2.mlstatic.com/D_700974-MLA51153014779_082022-C.jpg',
+        title: 'Greninja',
+        description: 'Pokemon',
+        price: '$600',
+    },
+        {
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl0tnjEWHpnNpkRNfJOCWVSwX6ahygN_IxGdSbN_fcHjvtaQ31mNNm4hZbzG8JFTxQAGw&usqp=CAU',
+        title: 'Arceus',
+        description: 'Pokemon',
+        price: '$700',
+    },
+    {
+        image: 'https://m.media-amazon.com/images/I/51HD4fFOPRL._AC_UF1000,1000_QL80_.jpg',
+        title: 'Pikachu',
+        description: 'Pokemon',
+        price: '$500',
+    },
+    {
+        image: 'https://konoyek.co/wp-content/uploads/2022/03/Figuras-Pokemon-Coleccionables-Originales-Squirtle-3.jpg',
+        title: 'Squirtle',
+        description: 'Pokemon',
+        price: '$500',
+    },
+        {
+        image: 'https://img.pacifiko.com/PROD/resize/1/500x500/YWI3ZjRkNj.jpg',
+        title: 'Bulbasaur',
+        description: 'Pokemon',
+        price: '$500',
+    },
+    {
+        image: 'https://pepeganga.vteximg.com.br/arquivos/ids/1091183/101403368-1.png?v=638458549263530000?1748822400013',
+        title: 'Kakashi',
+        description: 'Naruto',
+        price: '$600',
+    },
+    {
+        image: 'https://m.media-amazon.com/images/I/61mh6facbTL._AC_UF1000,1000_QL80_.jpg',
+        title: 'Sakura',
+        description: 'Naruto',
+        price: '$500',
+    },
+        {
+        image: 'https://i.ebayimg.com/thumbs/images/g/CeYAAOSw~pNnbnwF/s-l1200.jpg',
+        title: 'Sasuke',
+        description: 'Naruto',
+        price: '$600',
+    },
+    {
+        image: 'data:image/jpeg;base64,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',
+        title: 'Naruto',
+        description: 'Naruto',
+        price: '$600',
+    },
+    {
+        image: 'https://www.puertofantasy.es/14528-home_default/figura-naruto-naruto-uzumaki-15cm.jpg',
+        title: 'Naruto niño',
+        description: 'Naruto',
+        price: '$800',
+    },
+
+]
+
+const MunecosPage = () => {
+    return (
+    <>
+        <section>
+            <h2>¡Colecciona tus figuras favoritas!</h2>
+            <div className="cards_list">
+            {
+                datosMunecos.map((muñeco, i) => (<Card key={i} card={muñeco} />))
+            }
+            </div>
+        </section>
+
+        <style jsx>{`
+            section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            .cards_list {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                width: 80%;
+            }
+            .cards_list :global(.card) {
+                margin: 5px;
+                margin-top: 5px;
+            }
+
+        `}</style>
+        </>
+    )
+}
+
+export default MunecosPage

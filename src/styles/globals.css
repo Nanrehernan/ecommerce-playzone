@@ -1,1 +1,12 @@
 /* Escribir aqui los estilos globales de la app */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+                                   /* Estilo general del body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fde8d3;
+    color: #333;
+}

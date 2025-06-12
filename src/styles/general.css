@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+                                   /* Estilo general del body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fde8d3;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    gap: 2rem;
+}
