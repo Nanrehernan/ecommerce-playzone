@@ -1,8 +1,5 @@
 import Head from "next/head";
-import Button from "@/components/Button/Button";
 import Navegation from "@/components/Navegation";
-import ButtonSecundario from "@/components/Button/ButtonSecundario";
-import Card from "@/components/Card";
 
 
 

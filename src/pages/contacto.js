@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Button from "@/components/Button/Button"
 import Navegation from "@/components/Navegation";
 
 export default function contacto() {
@@ -13,7 +12,6 @@ export default function contacto() {
 
     <body>
         <header>
-            <h1>PlayZone</h1>
             <Navegation/>
         </header>
     </body>
