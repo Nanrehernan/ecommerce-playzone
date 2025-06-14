@@ -1,21 +1,21 @@
 import React from 'react'
 import Card from "@/components/Card"
-import { cartas } from '@/data/cartas.data'
+import { figuras } from '@/data/figuras.data'
 import css from "../styles/juegos.module.css"
 
 
 
-const CartasPage = () => {
+const MunecosPage = () => {
    return <>
       <section>
-         <h2 className={css.titulo}>¡Elige tu carta y colecciona tu albúm!</h2>
+         <h2 className={css.titulo}>¡Colecciona tus figuras favoritas!</h2>
          <div className={css.cards_list}>
             {
-               cartas.map((carta) => <Card key={carta.id} card={carta} />)
+               figuras.map((carta) => <Card key={carta.id} card={carta} />)
             }
          </div>
       </section>
    </>
 }
 
-export default CartasPage
+export default MunecosPage

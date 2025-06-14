@@ -1,0 +1,110 @@
+@import "./variables.css";
+
+.button_menu, .button_cart{
+   border: none;
+   background-color: transparent;
+   color: var(--color-dark);
+   cursor: pointer;
+}
+
+@media (width > 720){
+   .button_menu{
+      display: none;
+   }
+}
+
+.navbar {
+   display: flex;
+   height: 80px;
+   align-items: center;
+   justify-content: space-between;
+   background-color: var(--bg-secondary);
+   box-shadow: 0 2px 4px var(--bg-dark);
+   position: relative;
+   padding: 0 20px;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.logo_img {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   object-fit: cover;
+
+}
+
+.logo_text {
+   font-size: 1.25rem;
+   font-weight: bold;
+}
+
+
+.nav_links {
+   display: none;
+   flex-direction: column;
+   background-color: var(--bg-dark);
+   position: absolute;
+   top: 80px;
+   left: 0;
+   width: 80%;
+}
+
+.show_menu {
+   display: flex;
+}
+
+@media (width > 720) {
+   .nav_links {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: static;
+      background-color: transparent;
+      width: auto;
+   }
+}
+
+.nav_links a {
+   text-decoration: none;
+   color: var(--color-ligth);
+   font-weight: 500;
+   padding:  20px 0;
+   text-align: center;
+}
+
+@media (width > 720){
+   .nav_links a{
+      color: var(--color-dark);
+      padding: 0;
+   }
+
+   .nav_links a:hover{
+      color: var(--color-primary);
+   }
+}
+
+.cart_button {
+   position: relative;
+}
+
+.cart_icon {
+   position: relative;
+   background: none;
+   border: none;
+   cursor: pointer;
+}
+
+.icon_img {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   object-fit: cover;
+}

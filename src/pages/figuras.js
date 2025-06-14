@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Navegation from "@/components/Navegation";
-import MunecosPage from "@/components/MuñecosPage";
+import FigurasPage from "@/components/FigurasPage";
 
 export default function figuras() {
     return <>
@@ -16,7 +16,7 @@ export default function figuras() {
             <Navegation/>
         </header>
         <main>
-            <MunecosPage/>
+            <FigurasPage/>
         </main>
     </body>
 
