@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navegation from "@/components/Navegation";
+import css from "../styles/hero.module.css"
 
 
 
@@ -16,17 +17,13 @@ export default function Home() {
       </header>
 
       <main>
-         <div className="home-container">
-            <div className="filtro">
+         <div className={css.home_container}>
+            <div className={css.filtro}>
                <h2>Atrapa tus mundos favoritos</h2>
                <p>Videojuegos, cartas y figuras coleccionables al mejor precio.</p>
             </div>
-            <img className="pj" src="/b130d187-8f3f-44e7-9f06-18e2c8942636.png" />
+            <img className={css.pj} src="/b130d187-8f3f-44e7-9f06-18e2c8942636.png" />
          </div>
-
-            //Pongan carrusel//
-
-
       </main>
    </>
 }
