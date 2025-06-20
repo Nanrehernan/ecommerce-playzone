@@ -2,6 +2,7 @@ import React from 'react'
 import Button from './Button'
 import css from "../styles/card.module.css"
 import css_button from "../styles/button.module.css"
+import { ShoppingCart } from "@mui/icons-material";
 
 const Card = ({ card }) => {
    return <>
@@ -14,7 +15,10 @@ const Card = ({ card }) => {
             <p className={`${css.p} ${css.price}`}>{card.price}</p>
          </div>
          
-         <Button className={css_button.button_agregar}>Comprar</Button>
+         <Button className={css_button.button_agregar}>
+            <ShoppingCart />
+            Agregar al carrito
+         </Button>
       </div>
    </>
 }

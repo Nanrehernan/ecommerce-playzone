@@ -1,0 +1,18 @@
+@import "./variables.css";
+
+.contenedor_carrusel {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contenedor_carrusel h2{
+   margin-top: 20px;
+}
+
+.contenedor_slider{
+   padding: 40px 0;
+}

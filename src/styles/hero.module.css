@@ -5,13 +5,14 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: space-between;
+
    padding: 40px 0;
 }
 
 @media (width > 720) {
    .home_container {
       flex-direction: row;
+      justify-content: space-around;
       height: 40rem;
    }
 }
