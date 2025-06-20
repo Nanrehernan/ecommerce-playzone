@@ -16,7 +16,7 @@ const Navegation = () => {
          <button onClick={handleShowMenu} className={css.button_menu}><Menu /></button>
          
          <div className={css.logo}>
-            <img src="./logo.png" className={css.logo_img} />
+            <img src="/logo.png" className={css.logo_img} />
             <h2 className={css.logo_text}>PlayZone</h2>
          </div>
 
