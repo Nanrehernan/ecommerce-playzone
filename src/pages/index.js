@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navegation from "@/components/Navegation";
 import css from "../styles/hero.module.css"
 import Carrusel from "@/components/Carrusel";
+import Footer from "@/components/Footer";
 
 
 
@@ -26,6 +27,7 @@ export default function Home() {
             <img className={css.pj} src="/b130d187-8f3f-44e7-9f06-18e2c8942636.png" />
          </div>
          <Carrusel />
+         < Footer />
       </main>
    </>
 }
