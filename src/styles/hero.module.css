@@ -9,7 +9,7 @@
    padding: 40px 0;
 }
 
-@media (width > 720) {
+@media (width > 720px) {
    .home_container {
       flex-direction: row;
       justify-content: space-around;

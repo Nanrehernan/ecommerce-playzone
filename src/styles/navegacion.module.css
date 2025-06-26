@@ -6,7 +6,7 @@
    cursor: pointer;
 }
 
-@media (width > 720){
+@media (width > 720px){
    .button_menu{
       display: none;
    }
@@ -57,7 +57,7 @@
    display: flex;
 }
 
-@media (width > 720) {
+@media (width > 720px) {
    .nav_links {
       display: flex;
       flex-direction: row;
@@ -79,7 +79,7 @@
    text-align: center;
 }
 
-@media (width > 720){
+@media (width > 720px){
    .nav_links a{
       color: var(--color-dark);
       padding: 0;
