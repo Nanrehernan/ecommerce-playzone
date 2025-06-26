@@ -89,21 +89,3 @@
       color: var(--color-primary);
    }
 }
-
-.cart_button {
-   position: relative;
-}
-
-.cart_icon {
-   position: relative;
-   background: none;
-   border: none;
-   cursor: pointer;
-}
-
-.icon_img {
-   width: 40px;
-   height: 40px;
-   border-radius: 50%;
-   object-fit: cover;
-}

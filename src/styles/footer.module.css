@@ -7,37 +7,37 @@
     font-family: var(--font-secundary);
 }
 
-.footer-content {
+.footer_content {
     max-width: 960px;
     margin: 0 auto;
 }
 
-.footer-link {
+.footer_link {
     margin-top: 1rem;
 }
 
-.footer-link a {
+.footer_link a {
     color: white;
     margin: 0 10px;
     text-decoration: none;
 }
 
-.footer-link a:hover {
+.footer_link a:hover {
     color: white;
     text-decoration: underline;
 }
 
-.footer-social {
+.footer_social {
     margin-top: 1rem;
 }
 
-.footer-social a {
+.footer_social a {
     color: white;
     margin: 0 10px;
     font-size: 1.5rem;
     transition: color 0.3s;
 }
 
-.footer-social a:hover{
+.footer_social a:hover{
     color: #ff4081;
 }

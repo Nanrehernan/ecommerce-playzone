@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Navegation from "@/components/Navegation";
-import FigurasPage from "@/components/FigurasPage";
+import Navegacion from "../components/Navegacion.jsx"
+import FigurasPage from "../components/FigurasPage.jsx"
 
-export default function figuras() {
+export default function Figuras() {
    return <>
       <Head>
          <title>Play Zone</title>
@@ -12,7 +12,7 @@ export default function figuras() {
       </Head>
 
       <header>
-         <Navegation />
+         <Navegacion />
       </header>
       <main>
          <FigurasPage />

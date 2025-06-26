@@ -1,10 +1,10 @@
-import Link from "next/link"
+import Link from "next/link";
 import css from "../styles/navegacion.module.css"
-import { Menu, ShoppingCart } from '@mui/icons-material/';
+import { Menu, ShoppingCart } from '@mui/icons-material';
 import { useState } from "react";
 
 
-const Navegation = () => {
+const Navegacion = () => {
    const [showMenu, setShowmenu] = useState(false)
 
    const handleShowMenu = () => {
@@ -35,5 +35,5 @@ const Navegation = () => {
    </>
 }
 
-export default Navegation
+export default Navegacion
 

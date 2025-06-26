@@ -1,21 +1,21 @@
-import "../styles/footer.css";
+import css from "../styles/footer.module.css";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faInstagram , faFacebook , faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
     <>
-    <footer className="footer">
-        <div className="footer-content">
+    <footer className={css.footer}>
+        <div className={css.footer_content}>
             <p>© PlayZone. Todos los derechos reservados </p>
 
-            <div className="footer-link">
+            <div className={css.footer_link}>
                 <a href="">Acerca de</a>
                 <a href="">Contacto</a>
                 <a href="">Privacidad</a>
             </div>
 
-            <div className="footer-social">
+            <div className={css.footer_social}>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                 < FontAwesomeIcon icon={faInstagram}/>
                 </a>

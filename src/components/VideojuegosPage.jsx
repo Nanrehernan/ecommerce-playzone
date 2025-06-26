@@ -1,6 +1,5 @@
-import React from 'react'
-import Card from "@/components/Card"
-import { videoJuegos } from '@/data/videojuegos.data'
+import Card from "@/components/Card.jsx"
+import { videoJuegos } from '@/data/videojuegos.data.js'
 import css from "../styles/juegos.module.css"
 
 const VideojuegosPage = () => {

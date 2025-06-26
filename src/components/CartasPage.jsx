@@ -1,6 +1,5 @@
-import React from 'react'
-import Card from "@/components/Card"
-import { cartas } from '@/data/cartas.data'
+import Card from "./Card.jsx"
+import { cartas } from '@/data/cartas.data.js'
 import css from "../styles/juegos.module.css"
 
 

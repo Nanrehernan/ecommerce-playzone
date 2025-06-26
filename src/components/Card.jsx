@@ -1,5 +1,4 @@
-import React from 'react'
-import Button from './Button'
+import Button from './Button.jsx'
 import css from "../styles/card.module.css"
 import css_button from "../styles/button.module.css"
 import { ShoppingCart } from "@mui/icons-material";

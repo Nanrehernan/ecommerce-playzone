@@ -1,11 +1,11 @@
 import React from 'react'
-import Card from "@/components/Card"
-import { figuras } from '@/data/figuras.data'
+import Card from "./Card.jsx"
+import { figuras } from '@/data/figuras.data.js'
 import css from "../styles/juegos.module.css"
 
 
 
-const MunecosPage = () => {
+const FigurasPage = () => {
    return <>
       <section>
          <h2 className={css.titulo}>¡Colecciona tus figuras favoritas!</h2>
@@ -18,4 +18,4 @@ const MunecosPage = () => {
    </>
 }
 
-export default MunecosPage
+export default FigurasPage

@@ -1,19 +1,19 @@
 import Head from "next/head";
-import Navegation from "@/components/Navegation";
-import VideojuegosPage from "@/components/VideojuegosPage";
+import Navegacion from "../components/Navegacion.jsx"
+import VideojuegosPage from "../components/VideojuegosPage.jsx"
 
 
-export default function videojuegos() {
+export default function VideoJuegos() {
    return <>
       <Head>
-         <title>Play Zone</title>
          <meta name="description" content="Proyecto de E-commerce de Play Zone" />
          <meta name="viewport" content="width=device-width, initial-scale=1" />
          <link rel="icon" href="/favicon.ico" />
+         <title>Play Zone</title>
       </Head>
 
       <header>
-         <Navegation />
+         <Navegacion />
 
       </header>
       <main>

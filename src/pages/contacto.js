@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Navegation from "@/components/Navegation";
+import Navegacion from "../components/Navegacion.jsx"
 
-export default function contacto() {
+export default function Contacto() {
    return <>
       <Head>
          <title>Play Zone</title>
@@ -11,7 +11,7 @@ export default function contacto() {
       </Head>
 
       <header>
-         <Navegation />
+         <Navegacion />
       </header>
 
    </>

@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Navegation from "@/components/Navegation";
-import CartasPage from "@/components/CartasPage";
+import Navegacion from "../components/Navegacion.jsx"
+import CartasPage from "../components/CartasPage.jsx"
 
 
-export default function cartas() {
+export default function Cartas() {
    return <>
       <Head>
          <meta name="description" content="Proyecto de E-commerce de Play Zone" />
@@ -12,7 +12,7 @@ export default function cartas() {
       </Head>
 
       <header>
-         <Navegation />
+         <Navegacion />
       </header>
 
       <main>

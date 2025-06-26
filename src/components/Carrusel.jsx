@@ -1,8 +1,8 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide"
 import '@splidejs/react-splide/css';
 import css from "../styles/carrusel.module.css"
-import { cartas } from "@/data/cartas.data";
-import Card from "./Card";
+import { cartas } from "@/data/cartas.data.js";
+import Card from "./Card.jsx";
 
 
 const Carrusel = () => {

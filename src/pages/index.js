@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Navegation from "@/components/Navegation";
+import Navegacion from "../components/Navegacion.jsx"
 import css from "../styles/hero.module.css"
-import Carrusel from "@/components/Carrusel";
-import Footer from "@/components/Footer";
+import Carrusel from "../components/Carrusel.jsx"
+import Footer from "../components/Footer.jsx"
 
 
 
@@ -15,7 +15,7 @@ export default function Home() {
          <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-         <Navegation />
+         <Navegacion />
       </header>
 
       <main>
