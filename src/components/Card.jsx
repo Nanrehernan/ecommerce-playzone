@@ -4,6 +4,10 @@ import css_button from "../styles/button.module.css"
 import { ShoppingCart } from "@mui/icons-material";
 
 const Card = ({ card }) => {
+   const addToCart = event => {
+      window.alert("add to Cart")
+   }
+
    return <>
       <div className={css.card}>
          <img src={card.image} alt={card.title} className={css.img} />
@@ -14,7 +18,7 @@ const Card = ({ card }) => {
             <p className={`${css.p} ${css.price}`}>{card.price}</p>
          </div>
          
-         <Button className={css_button.button_agregar}>
+         <Button className={css_button.button_agregar} onClick={addToCart}>
             <ShoppingCart />
             Agregar al carrito
          </Button>

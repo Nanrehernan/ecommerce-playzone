@@ -11,3 +11,9 @@ body {
     background-color: var(--bg-ligth);
     color: var(--color-dark);
 }
+
+button {
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+}

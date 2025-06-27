@@ -2,13 +2,19 @@ import Link from "next/link";
 import css from "../styles/navegacion.module.css"
 import { Menu, ShoppingCart } from '@mui/icons-material';
 import { useState } from "react";
+import { useCart } from "@/hooks/useCart";
 
 
 const Navegacion = () => {
    const [showMenu, setShowmenu] = useState(false)
+   const {setShowCart} = useCart()
 
    const handleShowMenu = () => {
-      setShowmenu(!showMenu)
+      setShowmenu(prevShowMenu => !prevShowMenu)
+   }
+
+   const handleShowCart = () => {
+      setShowCart( prevShowCart => !prevShowCart)
    }
 
    return <>
@@ -28,7 +34,7 @@ const Navegacion = () => {
             <Link href="/contacto">Contacto</Link>
          </div>
 
-         <button className={css.button_cart}>
+         <button className={css.button_cart} onClick={handleShowCart}>
             <ShoppingCart />
          </button>
       </nav>

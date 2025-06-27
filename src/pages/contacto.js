@@ -1,7 +1,12 @@
 import Head from "next/head";
 import Navegacion from "../components/Navegacion.jsx"
+import Footer from "@/components/Footer.jsx";
+import Carrito from "@/components/Carrito.jsx";
+import { useCart } from "@/hooks/useCart.js";
 
 export default function Contacto() {
+   const {showCart} = useCart()
+
    return <>
       <Head>
          <title>Play Zone</title>
@@ -13,6 +18,10 @@ export default function Contacto() {
       <header>
          <Navegacion />
       </header>
+
+      {showCart && <Carrito />}
+
+      <Footer />
 
    </>
 }
