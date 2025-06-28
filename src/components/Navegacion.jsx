@@ -1,26 +1,28 @@
 import Link from "next/link";
 import css from "../styles/navegacion.module.css"
-import { Menu, ShoppingCart } from '@mui/icons-material';
+import { Menu, ShoppingCart, Close } from '@mui/icons-material';
 import { useState } from "react";
 import { useCart } from "@/hooks/useCart";
 
 
 const Navegacion = () => {
    const [showMenu, setShowmenu] = useState(false)
-   const {setShowCart} = useCart()
+   const { setShowCart, countToQuanty } = useCart()
 
    const handleShowMenu = () => {
       setShowmenu(prevShowMenu => !prevShowMenu)
    }
 
    const handleShowCart = () => {
-      setShowCart( prevShowCart => !prevShowCart)
+      setShowCart(prevShowCart => !prevShowCart)
    }
 
    return <>
       <nav className={css.navbar}>
-         <button onClick={handleShowMenu} className={css.button_menu}><Menu /></button>
-         
+         <button onClick={handleShowMenu} className={css.button_menu}>
+            {showMenu ? <Close /> : <Menu />}
+         </button>
+
          <div className={css.logo}>
             <img src="/logo.png" className={css.logo_img} />
             <h2 className={css.logo_text}>PlayZone</h2>
@@ -35,7 +37,7 @@ const Navegacion = () => {
          </div>
 
          <button className={css.button_cart} onClick={handleShowCart}>
-            <ShoppingCart />
+            <ShoppingCart /> {countToQuanty()}
          </button>
       </nav>
    </>

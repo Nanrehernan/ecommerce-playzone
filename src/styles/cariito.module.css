@@ -14,12 +14,15 @@
 .cart_list {
    padding: 20px;
    overflow-y: auto;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
 }
 
 .cart {
    width: 700px;
-   height: 500px;
-   background-color: var(--color-ligth);
+   height: 600px;
+   background-color: #fff;
    display: grid;
    grid-template-rows: auto 1fr auto;
    overflow: hidden;
@@ -28,12 +31,12 @@
 .cart header {
    display: flex;
    justify-content: space-between;
-   background-color: var(--color-primary);
+   background-color: var(--color-secondary);
    padding: 20px;
 }
 
 .cart h3 {
-   color: var(--color-ligth);
+   color: var(--color-dark);
 }
 
 .cart_item {
@@ -75,6 +78,11 @@
    gap: 20px;
 }
 
+.item_action span {
+   font-size: 1rem;
+   font-weight: bold;
+}
+
 .cart footer {
    padding: 20px;
    display: flex;
@@ -85,4 +93,14 @@
 .cart footer section{
    display: flex;
    justify-content: space-between;
+}
+
+.cart footer div {
+   display: grid;
+   grid-template-columns: 1fr 3fr;
+   gap: 20px;
+}
+
+.cart footer span {
+   font-size: 30px;
 }

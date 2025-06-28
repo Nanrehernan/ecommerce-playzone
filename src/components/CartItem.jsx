@@ -1,0 +1,42 @@
+import css from "../styles/cariito.module.css"
+import { Delete, ChevronLeft, ChevronRight } from '@mui/icons-material'
+import { red } from "@mui/material/colors"
+import { useCart } from "@/hooks/useCart"
+
+const CartItem = ({product}) => {
+   const {image, title, price, cantidad} = product
+   const {deleteToCartOne, addToQuanty, discountToQuanty} = useCart()
+
+   const handleDeleteToCartOne = () => {
+      deleteToCartOne(product)
+      window.alert(`El producto ${title} fue eliminado del carrito`)
+   }
+
+   const handleAddToQuanty = () => {
+      addToQuanty(product)
+   }
+
+   const handlediscountToQuanty = () => {
+      discountToQuanty(product)
+   }
+   
+   return <>
+      <div className={css.cart_item}>
+         <div className={css.item_description}>
+            <img src={image} alt="imagen" />
+            <div>
+               <span>{title}</span>
+               <span>{price}</span>
+            </div>
+         </div>
+         <div className={css.item_action}>
+            <button onClick={handlediscountToQuanty}><ChevronLeft /></button>
+            <span>{cantidad}</span>
+            <button onClick={handleAddToQuanty}><ChevronRight /></button>
+            <button onClick={handleDeleteToCartOne}><Delete sx={{color: red[500]}} /></button>
+         </div>
+      </div>
+   </>
+}
+
+export default CartItem
