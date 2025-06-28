@@ -10,9 +10,9 @@ const Footer = () => {
             <p>© PlayZone. Todos los derechos reservados </p>
 
             <div className="footer-link">
-                <a href="">Acerca de</a>
-                <a href="">Contacto</a>
-                <a href="">Privacidad</a>
+                <a href="/acerca_de">Acerca de</a>
+                <a href="/contacto">Contacto</a>
+                <a href="/privacidad">Privacidad</a>
             </div>
 
             <div className="footer-social">
