@@ -41,21 +41,21 @@ export const CartProvider = ({ children }) => {
       })
    }
 
-   const deleteToCartOne = ({title}) => {
+   const removeOneFromCart = ({title}) => {
       setCartProducts(prevCartProducts => prevCartProducts.filter(item => item.title !== title))
    }
 
-   const deleteToCart = () => {
+   const deleteFromCart = () => {
       setCartProducts([])
    }
 
-   const addToQuanty = ({title}) => {
+   const addToQuantity = ({title}) => {
       setCartProducts(prevCartProducts => {
          return prevCartProducts.map(item => item.title === title ? {...item, cantidad: item.cantidad + 1} : item)
       })
    }
 
-   const discountToQuanty = ({title}) => {
+   const quantityDiscount = ({title}) => {
       setCartProducts(prevCartProducts => {
          const product = prevCartProducts.find(item => item.title === title)
 
@@ -70,7 +70,7 @@ export const CartProvider = ({ children }) => {
          })
    }
 
-   const countToQuanty = () => {
+   const getQuantity = () => {
       return cartProducts.reduce( (total, item) => total += item.cantidad, 0)
    }
 
@@ -79,11 +79,11 @@ export const CartProvider = ({ children }) => {
       setShowCart,
       cartProducts,
       addToCart,
-      deleteToCartOne,
-      deleteToCart,
-      addToQuanty,
-      discountToQuanty,
-      countToQuanty
+      removeOneFromCart,
+      deleteFromCart,
+      addToQuantity,
+      quantityDiscount,
+      getQuantity
    }
 
    return <>

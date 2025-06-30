@@ -5,19 +5,19 @@ import { useCart } from "@/hooks/useCart"
 
 const CartItem = ({product}) => {
    const {image, title, price, cantidad} = product
-   const {deleteToCartOne, addToQuanty, discountToQuanty} = useCart()
+   const {removeOneFromCart, addToQuantity, quantityDiscount} = useCart()
 
-   const handleDeleteToCartOne = () => {
-      deleteToCartOne(product)
+   const handleRemoveOneFromCart = () => {
+      removeOneFromCart(product)
       window.alert(`El producto ${title} fue eliminado del carrito`)
    }
 
-   const handleAddToQuanty = () => {
-      addToQuanty(product)
+   const handleAddToQuantity = () => {
+      addToQuantity(product)
    }
 
-   const handlediscountToQuanty = () => {
-      discountToQuanty(product)
+   const handleQuantityDiscount = () => {
+      quantityDiscount(product)
    }
    
    return <>
@@ -30,10 +30,10 @@ const CartItem = ({product}) => {
             </div>
          </div>
          <div className={css.item_action}>
-            <button onClick={handlediscountToQuanty}><ChevronLeft /></button>
+            <button onClick={handleQuantityDiscount}><ChevronLeft /></button>
             <span>{cantidad}</span>
-            <button onClick={handleAddToQuanty}><ChevronRight /></button>
-            <button onClick={handleDeleteToCartOne}><Delete sx={{color: red[500]}} /></button>
+            <button onClick={handleAddToQuantity}><ChevronRight /></button>
+            <button onClick={handleRemoveOneFromCart}><Delete sx={{color: red[500]}} /></button>
          </div>
       </div>
    </>

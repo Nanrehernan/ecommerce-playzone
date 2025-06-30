@@ -7,7 +7,7 @@ import { useCart } from "@/hooks/useCart";
 
 const Navegacion = () => {
    const [showMenu, setShowmenu] = useState(false)
-   const { setShowCart, countToQuanty } = useCart()
+   const { setShowCart, getQuantity } = useCart()
 
    const handleShowMenu = () => {
       setShowmenu(prevShowMenu => !prevShowMenu)
@@ -37,7 +37,7 @@ const Navegacion = () => {
          </div>
 
          <button className={css.button_cart} onClick={handleShowCart}>
-            <ShoppingCart /> {countToQuanty()}
+            <ShoppingCart /> {getQuantity()}
          </button>
       </nav>
    </>

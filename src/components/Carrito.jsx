@@ -7,21 +7,21 @@ import CartItem from "./CartItem"
 import { AttachMoney, Delete } from '@mui/icons-material'
 
 const Carrito = () => {
-   const { setShowCart, cartProducts, deleteToCart, countToQuanty } = useCart()
+   const { setShowCart, cartProducts, deleteFromCart, getQuantity } = useCart()
 
    const handleShowCart = () => {
       setShowCart(prevShowCart => !prevShowCart)
    }
 
-   const handleDeleteToCart = () => {
-      deleteToCart()
+   const handleDeleteFromCart = () => {
+      deleteFromCart()
       window.alert("Todos los productos del carrito fueron eliminados")
    }
 
    const handleProcesarCompra = () => {
       if (cartProducts.length === 0) return window.alert("Elc arrito está vacío")
 
-      deleteToCart()
+      deleteFromCart()
       window.alert("La venta fue procesada")
    }
 
@@ -29,7 +29,7 @@ const Carrito = () => {
       <div className={css.cart_box}>
          <aside className={css.cart}>
             <header>
-               <h3>Mi Carrito ({countToQuanty()})</h3>
+               <h3>Mi Carrito ({getQuantity()})</h3>
                <button className="close-cart" onClick={handleShowCart}>
                   <Close />
                </button>
@@ -46,10 +46,10 @@ const Carrito = () => {
             <footer>
                <section>
                   <span>Total:</span>
-                  <span className={css.price}>$ {countToQuanty()}</span>
+                  <span className={css.price}>$ {getQuantity()}</span>
                </section>
                <div>
-                  <Button className={css_button.button_clear_carrito} onClick={handleDeleteToCart}>
+                  <Button className={css_button.button_clear_carrito} onClick={handleDeleteFromCart}>
                      <Delete />
                      Limpiar
                   </Button>
