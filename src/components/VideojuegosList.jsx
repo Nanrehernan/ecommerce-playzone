@@ -2,7 +2,7 @@ import Card from "@/components/Card.jsx"
 import { videoJuegos } from '@/data/videojuegos.data.js'
 import css from "../styles/juegos.module.css"
 
-const VideojuegosPage = () => {
+const VideoJuegosList = () => {
    return <>
       <section>
          <h2 className={css.titulo}>¡Elige y disfruta jugando en tu plataforma favorita!</h2>
@@ -15,4 +15,4 @@ const VideojuegosPage = () => {
    </>
 }
 
-export default VideojuegosPage
+export default VideoJuegosList

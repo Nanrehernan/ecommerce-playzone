@@ -2,6 +2,7 @@ import css from "../styles/cariito.module.css"
 import { Delete, ChevronLeft, ChevronRight } from '@mui/icons-material'
 import { red } from "@mui/material/colors"
 import { useCart } from "@/hooks/useCart"
+import { priceFormat } from "@/utilities/priceFormat.utility"
 
 const CartItem = ({product}) => {
    const {image, title, price, cantidad} = product
@@ -26,7 +27,7 @@ const CartItem = ({product}) => {
             <img src={image} alt="imagen" />
             <div>
                <span>{title}</span>
-               <span>{price}</span>
+               <span>{priceFormat(price)}</span>
             </div>
          </div>
          <div className={css.item_action}>

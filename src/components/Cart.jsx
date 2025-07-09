@@ -5,9 +5,10 @@ import css_button from "../styles/button.module.css"
 import { Close } from '@mui/icons-material'
 import CartItem from "./CartItem"
 import { AttachMoney, Delete } from '@mui/icons-material'
+import { priceFormat } from "@/utilities/priceFormat.utility"
 
-const Carrito = () => {
-   const { setShowCart, cartProducts, deleteFromCart, getQuantity } = useCart()
+const Cart = () => {
+   const { setShowCart, cartProducts, deleteFromCart, getQuantity, getTotal } = useCart()
 
    const handleShowCart = () => {
       setShowCart(prevShowCart => !prevShowCart)
@@ -38,7 +39,7 @@ const Carrito = () => {
             <section className={css.cart_list}>
                {cartProducts.length === 0 && "El carrito está vacío"}
                {cartProducts.map(product => <>
-                  <CartItem key={product.title} product={product} />
+                  <CartItem key={product.id} product={product} />
                   <hr />
                </>)}
             </section>
@@ -46,7 +47,7 @@ const Carrito = () => {
             <footer>
                <section>
                   <span>Total:</span>
-                  <span className={css.price}>$ {getQuantity()}</span>
+                  <span className={css.price}>{priceFormat(getTotal())}</span>
                </section>
                <div>
                   <Button className={css_button.button_clear_carrito} onClick={handleDeleteFromCart}>
@@ -64,4 +65,4 @@ const Carrito = () => {
    </>
 }
 
-export default Carrito
+export default Cart

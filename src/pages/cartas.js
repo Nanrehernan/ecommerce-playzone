@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Navegacion from "../components/Navegacion.jsx"
-import CartasPage from "../components/CartasPage.jsx"
+import CartasList from "../components/CartasList.jsx"
 import Footer from "@/components/Footer.jsx";
-import Carrito from "@/components/Carrito.jsx";
+import Cart from "@/components/Cart.jsx";
 import { useCart } from "@/hooks/useCart.js";
 
 export default function Cartas() {
@@ -19,11 +19,11 @@ export default function Cartas() {
          <Navegacion />
       </header>
 
-      <main>
-         <CartasPage />
-      </main>
+      {showCart && <Cart />}
 
-      {showCart && <Carrito />}
+      <main>
+         <CartasList />
+      </main>
 
       <Footer />
 

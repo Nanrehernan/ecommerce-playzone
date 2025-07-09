@@ -4,7 +4,7 @@ import css from "../styles/juegos.module.css"
 
 
 
-const CartasPage = () => {
+const CartasList = () => {
    return <>
       <section>
          <h2 className={css.titulo}>¡Elige tu carta y colecciona tu albúm!</h2>
@@ -17,4 +17,4 @@ const CartasPage = () => {
    </>
 }
 
-export default CartasPage
+export default CartasList

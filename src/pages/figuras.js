@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Navegacion from "../components/Navegacion.jsx"
-import FigurasPage from "../components/FigurasPage.jsx"
-import Carrito from "@/components/Carrito.jsx";
+import FigurasList from "../components/FigurasList.jsx"
+import Cart from "@/components/Cart.jsx";
 import { useCart } from "@/hooks/useCart.js";
 import Footer from "@/components/Footer.jsx";
 
@@ -20,10 +20,10 @@ export default function Figuras() {
          <Navegacion />
       </header>
 
-      {showCart && <Carrito />}
+      {showCart && <Cart />}
 
       <main>
-         <FigurasPage />
+         <FigurasList />
       </main>
 
       <Footer />

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Navegacion from "../components/Navegacion.jsx"
 import Footer from "@/components/Footer.jsx";
-import Carrito from "@/components/Carrito.jsx";
+import Cart from "@/components/Cart.jsx";
 import { useCart } from "@/hooks/useCart.js";
 
 export default function Contacto() {
@@ -19,7 +19,7 @@ export default function Contacto() {
          <Navegacion />
       </header>
 
-      {showCart && <Carrito />}
+      {showCart && <Cart />}
 
       <Footer />
 

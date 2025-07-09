@@ -102,5 +102,9 @@
 }
 
 .cart footer span {
-   font-size: 30px;
+   font-size: 1.5rem;
+}
+
+.price {
+   font-weight: bold;
 }

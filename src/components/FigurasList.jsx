@@ -5,7 +5,7 @@ import css from "../styles/juegos.module.css"
 
 
 
-const FigurasPage = () => {
+const FigurasList = () => {
    return <>
       <section>
          <h2 className={css.titulo}>¡Colecciona tus figuras favoritas!</h2>
@@ -18,4 +18,4 @@ const FigurasPage = () => {
    </>
 }
 
-export default FigurasPage
+export default FigurasList

@@ -5,7 +5,7 @@ import css from "../styles/hero.module.css"
 import Carrusel from "../components/Carrusel.jsx"
 import Footer from "../components/Footer.jsx"
 import { useCart } from "@/hooks/useCart.js";
-import Carrito from "@/components/Carrito.jsx";
+import Cart from "@/components/Cart.jsx";
 
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
          <Navegacion />
       </header>
 
-      {showCart && <Carrito />}
+      {showCart && <Cart />}
 
       <main>
          <div className={css.home_container}>

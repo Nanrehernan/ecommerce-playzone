@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Navegacion from "../components/Navegacion.jsx"
-import VideojuegosPage from "../components/VideojuegosPage.jsx"
-import Carrito from "@/components/Carrito.jsx"
+import VideoJuegosList from "../components/VideojuegosList.jsx"
+import Cart from "@/components/Cart.jsx"
 import { useCart } from "@/hooks/useCart.js"
 import Footer from "@/components/Footer.jsx";
 
@@ -22,10 +22,10 @@ export default function VideoJuegos() {
 
       </header>
 
-      {showCart && <Carrito />}
+      {showCart && <Cart />}
 
       <main>
-         <VideojuegosPage />
+         <VideoJuegosList />
       </main>
 
       <Footer />

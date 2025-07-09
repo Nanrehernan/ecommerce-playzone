@@ -1,19 +1,21 @@
 import css from "../styles/footer.module.css";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faInstagram , faFacebook , faWhatsapp} from '@fortawesome/free-brands-svg-icons';
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <>
     <footer className={css.footer}>
         <div className={css.footer_content}>
-            <p>© PlayZone. Todos los derechos reservados </p>
-
-            <div className={css.footer_link}>
-                <a href="">Acerca de</a>
-                <a href="">Contacto</a>
-                <a href="">Privacidad</a>
-            </div>
+         
+            <nav className={css.footer_link}>
+                <Link href="/">Inicio</Link>
+                <Link href="/videojuegos">Video Juegos</Link>
+                <Link href="/cartas">Cartas</Link>
+                <Link href="/figuras">Figuras</Link>
+                <Link href="/contacto">Contacto</Link>
+            </nav>
 
             <div className={css.footer_social}>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
@@ -27,6 +29,8 @@ const Footer = () => {
                 </a>
             </div>
         </div>
+
+        <p>© PlayZone. Todos los derechos reservados </p>
 
     </footer>
     </>
