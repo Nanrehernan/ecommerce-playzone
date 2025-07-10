@@ -10,7 +10,7 @@ const CartItem = ({product}) => {
 
    const handleRemoveOneFromCart = () => {
       removeOneFromCart(product)
-      window.alert(`El producto ${title} fue eliminado del carrito`)
+      window.alert(`El producto "${title}" fue eliminado del carrito`)
    }
 
    const handleAddToQuantity = () => {

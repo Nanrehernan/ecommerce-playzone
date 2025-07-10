@@ -66,9 +66,16 @@
 }
 
 .cart_item img {
-   width: 100px;
-   height: 100px;
+   width: 50px;
+   height: 50px;
    object-fit: cover;
+}
+
+@media (width > 720px) {
+   .cart_item img {
+      width: 100px;
+      height: 100px;
+   }
 }
 
 .item_action {
@@ -90,7 +97,7 @@
    gap: 20px;
 }
 
-.cart footer section{
+.cart footer section {
    display: flex;
    justify-content: space-between;
 }

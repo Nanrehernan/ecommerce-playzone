@@ -1,10 +1,32 @@
 const { createContext, useState, useEffect } = require("react");
 
+const CART_KEY = "mi-carrito"
+
 export const CartContext = createContext()
 
 export const CartProvider = ({ children }) => {
    const [showCart, setShowCart] = useState(false)
    const [cartProducts, setCartProducts] = useState([])
+
+   useEffect(() => {
+      const localItem = window.localStorage.getItem(CART_KEY)
+
+      if (!localItem){
+         setCartProducts([])
+         return
+      }
+
+      try {
+         setCartProducts(JSON.parse(localItem))
+      } catch (error) {
+         setCartProducts([])
+      }
+
+   }, [])
+
+   useEffect(() => {
+      window.localStorage.setItem(CART_KEY, JSON.stringify(cartProducts))
+   }, [cartProducts])
 
    useEffect(() => {
       if (showCart) {
@@ -58,6 +80,8 @@ export const CartProvider = ({ children }) => {
    const quantityDiscount = ({id}) => {
       setCartProducts(prevCartProducts => {
          const product = prevCartProducts.find(item => item.id === id)
+
+         if (!product) return
 
          const cantidad = product.cantidad - 1
 
