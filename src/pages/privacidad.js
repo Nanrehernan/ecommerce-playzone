@@ -1,5 +1,9 @@
 import Head from "next/head";
 import Navegation from "@/components/Navegation";
+import Footer from "@/components/Footer";
+import css from "../styles/privacidad.css";
+
+
 
 export default function contacto() {
    return <>
@@ -14,42 +18,23 @@ export default function contacto() {
          <Navegation />
       </header>
       <main>
-         <div>
-            <h1>
-               Política de Privacidad
-            </h1>
-            <p>En Playzone nos tomamos en serio tu privacidad. Cuando hacés una compra, te registrás o simplemente nos escribís, cuidamos tus datos como si fueran parte de nuestra colección más valiosa.
-
-                ¿Qué datos guardamos?
-                Solo lo necesario para brindarte una buena experiencia:
-
-                Nombre y apellido
-
-                Dirección de envío
-
-                Email y teléfono
-
-                Detalles de tu compra
-
-                Nunca compartimos tu información con terceros, salvo lo justo y necesario para completar envíos o procesar pagos.
-
-                ¿Para qué usamos tus datos?
-                Para enviarte tus pedidos
-
-                Para contactarte si hay algún problema
-
-                Para avisarte de promos, torneos o lanzamientos (si te suscribís a nuestras novedades)
-
-                ¿Están seguros?
-                Sí. Usamos plataformas confiables y protegidas para procesar los pagos y almacenar tu info. No vendemos, regalamos ni prestamos tus datos. Jamás.
-
-                Si alguna vez querés modificar o borrar tu información, escribinos a contacto@playzone.com y lo resolvemos al toque.
-
-
-
+           <section class="privacy-container">
+            <h1>Política de Privacidad</h1>
+             <p>
+                En <strong>Playzone</strong>, valoramos tu privacidad y nos comprometemos a proteger cualquier dato personal que compartas con nosotros.
             </p>
-               
-         </div>
+             <p>
+                  Toda la información que recopilamos se usa exclusivamente para mejorar tu experiencia en nuestra tienda, ya sea para procesar pedidos, enviarte novedades o brindarte soporte técnico.            
+            </p>
+             <p>
+                  No compartimos tu información con terceros sin tu consentimiento, y aplicamos medidas de seguridad para mantenerla protegida.
+            </p>
+            <p class="highlight">
+                  Usando Playzone, aceptás nuestra política de privacidad. Cuidamos tu data como si fuera nuestra. 🔒🧠
+            </p>
+            </section>
+         
+         <Footer/>
       </main>
 
    </>

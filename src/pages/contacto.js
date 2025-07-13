@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Navegation from "@/components/Navegation";
+import Footer from "@/components/Footer";
+import css from "../styles/contacto.css"
 
 export default function contacto() {
    return <>
@@ -14,22 +16,26 @@ export default function contacto() {
          <Navegation />
       </header>
       <main>
-         <div>
-            <h1>
-               Contacto
-            </h1>
+         <section class="contact-container">
+            <h1>Contacto</h1>
             <p>
-               ¿Tenés alguna duda, querés hacer un pedido especial o simplemente hablar de cartas y videojuegos? ¡Escribinos!
-
-               📩 Email: contacto@playzone.com
-               📱 WhatsApp: +54 9 11 1234-5678
-               📷 Instagram: @playzone.gamers
-               🎮 Twitch: twitch.tv/Playzone
-               
-               También podés mandarnos un mensaje directo desde nuestras redes o completar el formulario acá abajo (si tenés uno en tu web).
-               Respondemos rápido y siempre con buena onda. ¡Nos encanta hablar con otros gamers!
+               ¿Tenés alguna duda, sugerencia o simplemente querés saludarnos?
+               Estamos para ayudarte.
             </p>
-         </div>
+            <p>
+               Podés comunicarte con nosotros por los siguientes medios:
+            </p>
+               <ul>
+                  <li><strong>Email:</strong> contacto@playzone.com</li>
+                  <li><strong>Instagram:</strong> @playzone.ar</li>
+                  <li><strong>WhatsApp:</strong> +54 9 11 1234 5678</li>
+               </ul>
+            <p class="highlight">
+               Respondemos rápido y con buena onda. ¡Hablá con nosotros! 📩💬
+            </p>
+  </section>
+         
+         <Footer/>
       </main>
 
    </>
