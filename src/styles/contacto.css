@@ -1,0 +1,40 @@
+.contact-container {
+  background: #1c1c1f;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  color: #f1f1f1;
+}
+
+.contact-container h1 {
+  font-size: 2.5rem;
+  color: #00bfff;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00bfff;
+  padding-bottom: 10px;
+}
+
+.contact-container p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #cccccc;
+}
+
+.contact-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px;
+}
+
+.contact-container li {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  color: #aaaaaa;
+}
+
+.contact-container .highlight {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00ffcc;
+  margin-top: 25px;
+}
