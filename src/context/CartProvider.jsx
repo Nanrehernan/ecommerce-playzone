@@ -1,6 +1,5 @@
-const { createContext, useState, useEffect } = require("react");
-
-const CART_KEY = "mi-carrito"
+import {useState, useEffect, createContext} from "react"
+import { api } from "@/utilities/api.axios"
 
 export const CartContext = createContext()
 
@@ -9,24 +8,8 @@ export const CartProvider = ({ children }) => {
    const [cartProducts, setCartProducts] = useState([])
 
    useEffect(() => {
-      const localItem = window.localStorage.getItem(CART_KEY)
-
-      if (!localItem){
-         setCartProducts([])
-         return
-      }
-
-      try {
-         setCartProducts(JSON.parse(localItem))
-      } catch (error) {
-         setCartProducts([])
-      }
-
+      getCartProducts()
    }, [])
-
-   useEffect(() => {
-      window.localStorage.setItem(CART_KEY, JSON.stringify(cartProducts))
-   }, [cartProducts])
 
    useEffect(() => {
       if (showCart) {
@@ -39,59 +22,83 @@ export const CartProvider = ({ children }) => {
 
    }, [showCart])
 
-   const addToCart = (product) => {
-      setCartProducts(prevCartProducts => {
-         const existe = prevCartProducts.find(item => item.id === product.id)
+   const getCartProducts = async () => {
+      const {data} = await api.get("/carrito")
+      setCartProducts(data)
+   }
 
-         if (existe) {
-            return prevCartProducts.map(item => {
-               if (item.id === product.id){
-                  return {
-                     ...item,
-                     cantidad: item.cantidad + 1
-                  }
-               }else{
-                  return item
-               }
-            })
-         }
+   const addToCart = async (product) => {
+      const {id} = product
 
-         return [...prevCartProducts, {
+      try {
+         const {data: item} = await api.get(`/carrito/${id}`)
+         if (!item) return
+         const {status} = await api.patch(`/carrito/${id}`, {cantidad: item.cantidad + 1})
+         if (status !== 200) return
+         console.log("Producto modificado")
+      } catch (error) {
+         const data = {
             ...product,
             cantidad: 1
-         }]
-      })
-   }
-
-   const removeOneFromCart = ({id}) => {
-      setCartProducts(prevCartProducts => prevCartProducts.filter(item => item.id !== id))
-   }
-
-   const deleteFromCart = () => {
-      setCartProducts([])
-   }
-
-   const addToQuantity = ({id}) => {
-      setCartProducts(prevCartProducts => {
-         return prevCartProducts.map(item => item.id === id ? {...item, cantidad: item.cantidad + 1} : item)
-      })
-   }
-
-   const quantityDiscount = ({id}) => {
-      setCartProducts(prevCartProducts => {
-         const product = prevCartProducts.find(item => item.id === id)
-
-         if (!product) return
-
-         const cantidad = product.cantidad - 1
-
-         if (cantidad > 0){
-            return prevCartProducts.map(item => item.id === id ? {...item, cantidad} : item)
+         }
+         const {status} = await api.post("/carrito", data)
+         if (status !== 201){
+            console.log("No se pudo agregar al carrito, error desconocido")
+            return
          }
 
-         return prevCartProducts.filter(item => item.id !== id)
-           
-         })
+         console.log("Agregado al carrito con exito")
+      }
+
+      getCartProducts()
+   }
+
+   const removeOneFromCart = async ({id}) => {
+      const {status} = await api.delete(`/carrito/${id}`)
+      if (status !== 200){
+         console.log("No se pudo quitar del carrito")
+         return
+      }
+      getCartProducts()
+      console.log("Eliminado con exito")
+   }
+
+   const deleteFromCart = async () => {
+      const {data: items} = await api.get("/carrito", [])
+
+      for(let item of items){
+         await api.delete(`/carrito/${item.id}`)
+      }
+
+      getCartProducts()
+      console.log("Carrito vacio")
+   }
+
+   const addToQuantity = async ({id}) => {
+      try {
+         const {data: item} = await api.get(`/carrito/${id}`)
+         await api.patch(`/carrito/${id}`, {cantidad: item.cantidad + 1})
+      } catch (error) {
+         
+      }
+
+      getCartProducts()
+   }
+
+   const quantityDiscount = async ({id}) => {
+      try {
+         const {data: item} = await api.get(`/carrito/${id}`)
+         const cantidad = item.cantidad - 1
+         if (cantidad < 1){
+            await api.delete(`/carrito/${id}`)
+         }else{
+            await api.patch(`/carrito/${id}`, {cantidad})
+         }
+      } catch (error) {
+         
+      }
+
+      getCartProducts()
    }
 
    const getQuantity = () => {

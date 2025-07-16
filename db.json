@@ -1,0 +1,324 @@
+{
+  "cartas": [
+    {
+      "id": "1",
+      "image": "https://www.kroger.com/product/images/large/front/0082065081344",
+      "title": "Pokémon",
+      "description": "Box de Cartas",
+      "price": 50000
+    },
+    {
+      "id": "2",
+      "image": "https://i.pinimg.com/564x/9d/c2/58/9dc25825cd8f91ec2b4d0161d785d0f2.jpg",
+      "title": "Pikachu & Zekrom GX",
+      "description": "Pokemon - Legendaria",
+      "price": 800
+    },
+    {
+      "id": "3",
+      "image": "https://dz3we2x72f7ol.cloudfront.net/expansions/temporal-forces/en-us/SV05_EN_50.png",
+      "title": "Walkin Wake ex",
+      "description": "Carta Basica",
+      "price": 200
+    },
+    {
+      "id": "4",
+      "image": "https://cdn.shopify.com/s/files/1/0685/7451/1412/files/greninja-ex-214_167_480x480.jpg?v=1727469340",
+      "title": "Greninja ex",
+      "description": "Pokemon - Rara",
+      "price": 400
+    },
+    {
+      "id": "5",
+      "image": "https://tools.toywiz.com/_images/_webp/_products/lg/pokemonevolvingskies095.webp",
+      "title": "Umbreon VMAX",
+      "description": "Carta Ultra Rara",
+      "price": 600
+    },
+    {
+      "id": "6",
+      "image": "https://http2.mlstatic.com/D_837793-MLB82793874049_022025-O.jpg",
+      "title": "Dragon Ball Z",
+      "description": "Box de Cartas",
+      "price": 50000
+    },
+    {
+      "id": "7",
+      "image": "https://i.ebayimg.com/thumbs/images/g/5gIAAOSwSqpnLo3F/s-l1200.jpg",
+      "title": "Dragon Ball Z",
+      "description": "Sobre de Cartas",
+      "price": 5000
+    },
+    {
+      "id": "8",
+      "image": "https://totalcards.net/cdn/shop/files/DBS-BT25-154_41bf507c-a532-4b45-ad79-4964951d48a7.jpg?v=1721403770&width=535",
+      "title": "Vegetta SS$ ",
+      "description": "Dragon Ball Z - Ultra Rara",
+      "price": 600
+    },
+    {
+      "id": "9",
+      "image": "https://i.ebayimg.com/00/s/MTYwMFgxMjAw/z/f0YAAOSwRRpgPg4S/$_57.JPG?set_id=880000500F",
+      "title": "Goku Ultra Instinto",
+      "description": "Dragon Ball Z - Ultra Rara",
+      "price": 600
+    },
+    {
+      "id": "10",
+      "image": "https://cf.ltkcdn.net/antiques/images/std-xs/329877-340x477-son-goku-the-awakened-power.jpeg",
+      "title": "Goku Ultra Instinto",
+      "description": "Dragon Ball Z - Legendaria",
+      "price": 800
+    },
+    {
+      "id": "11",
+      "image": "https://m.media-amazon.com/images/I/71izXa2E5AL._AC_UF894,1000_QL80_.jpg",
+      "title": "YU-GI-OH",
+      "description": "Box de Cartas",
+      "price": 50000
+    },
+    {
+      "id": "12",
+      "image": "https://media.miniaturemarket.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/k/o/kon86188-pack.jpg",
+      "title": "YU-GI-OH",
+      "description": "Sobre de Cartas",
+      "price": 5000
+    },
+    {
+      "id": "13",
+      "image": "https://www.yugioh-card.com/en/wp-content/uploads/2024/07/SS-DMG03_550.png",
+      "title": "Maga Oscura",
+      "description": "Yu-gi-oh - Basica",
+      "price": 200
+    },
+    {
+      "id": "14",
+      "image": "https://m.media-amazon.com/images/I/515QwAS0JcL._AC_.jpg",
+      "title": "Dragon blanco de ojo azules",
+      "description": "Yu-gi-oh - Rara",
+      "price": 400
+    },
+    {
+      "id": "15",
+      "image": "https://images-eu.ssl-images-amazon.com/images/I/81JLy8VIaUL._AC_UL210_SR210,210_.jpg",
+      "title": "Dragon Maestro de 3 Cabeza",
+      "description": "Yu-gi-oh - Legendaria",
+      "price": 800
+    }
+  ],
+  "figuras": [
+    {
+      "id": "16",
+      "image": "https://cdn.shopk.it/usercontent/dream-pop-world/media/images/83e7c82-124532-figura-dragon-ball-z-solid-edge-works-vol15-frieza-pvc-16cm-banpresto.jpg",
+      "title": "Freezer",
+      "description": "Dragon Ball Z",
+      "price": 500
+    },
+    {
+      "id": "17",
+      "image": "https://www.toysmaster.pe/cdn/shop/products/Figure_Rise_Dragon_Ball_Super_Goku_Ultra_Instinct_toysmaster_7.jpg?v=1674609044",
+      "title": "Goku Ultra instinto",
+      "description": "Dragon Ball Z",
+      "price": 600
+    },
+    {
+      "id": "18",
+      "image": "https://images.fravega.com/f300/de34d89d7fb3890d733d64053cdcb995.jpg.webp",
+      "title": "Vegeta SS Blue",
+      "description": "Dragon Ball Z",
+      "price": 500
+    },
+    {
+      "id": "19",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_650090-MLU74116372782_012024-F.webp",
+      "title": "Goku",
+      "description": "Dragon Ball Z",
+      "price": 500
+    },
+    {
+      "id": "20",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_891822-MLA75468072265_032024-O.webp",
+      "title": "Bardock",
+      "description": "Dragon Ball Z",
+      "price": 600
+    },
+    {
+      "id": "21",
+      "image": "https://http2.mlstatic.com/D_700974-MLA51153014779_082022-C.jpg",
+      "title": "Greninja",
+      "description": "Pokemon",
+      "price": 600
+    },
+    {
+      "id": "22",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl0tnjEWHpnNpkRNfJOCWVSwX6ahygN_IxGdSbN_fcHjvtaQ31mNNm4hZbzG8JFTxQAGw&usqp=CAU",
+      "title": "Arceus",
+      "description": "Pokemon",
+      "price": 700
+    },
+    {
+      "id": "23",
+      "image": "https://m.media-amazon.com/images/I/51HD4fFOPRL._AC_UF1000,1000_QL80_.jpg",
+      "title": "Pikachu",
+      "description": "Pokemon",
+      "price": 500
+    },
+    {
+      "id": "24",
+      "image": "https://konoyek.co/wp-content/uploads/2022/03/Figuras-Pokemon-Coleccionables-Originales-Squirtle-3.jpg",
+      "title": "Squirtle",
+      "description": "Pokemon",
+      "price": 500
+    },
+    {
+      "id": "25",
+      "image": "https://img.pacifiko.com/PROD/resize/1/500x500/YWI3ZjRkNj.jpg",
+      "title": "Bulbasaur",
+      "description": "Pokemon",
+      "price": 500
+    },
+    {
+      "id": "26",
+      "image": "https://pepeganga.vteximg.com.br/arquivos/ids/1091183/101403368-1.png?v=638458549263530000?1748822400013",
+      "title": "Kakashi",
+      "description": "Naruto",
+      "price": 600
+    },
+    {
+      "id": "27",
+      "image": "https://m.media-amazon.com/images/I/61mh6facbTL._AC_UF1000,1000_QL80_.jpg",
+      "title": "Sakura",
+      "description": "Naruto",
+      "price": 500
+    },
+    {
+      "id": "28",
+      "image": "https://i.ebayimg.com/thumbs/images/g/CeYAAOSw~pNnbnwF/s-l1200.jpg",
+      "title": "Sasuke",
+      "description": "Naruto",
+      "price": 600
+    },
+    {
+      "id": "29",
+      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUW...",
+      "title": "Naruto",
+      "description": "Naruto",
+      "price": 600
+    },
+    {
+      "id": "30",
+      "image": "https://www.puertofantasy.es/14528-home_default/figura-naruto-naruto-uzumaki-15cm.jpg",
+      "title": "Naruto niño",
+      "description": "Naruto",
+      "price": 800
+    }
+  ],
+  "videojuegos": [
+    {
+      "id": "31",
+      "image": "https://m.media-amazon.com/images/I/81htlTqEckL._SL1500_.jpg",
+      "title": "Grand Thef Auto V",
+      "description": "Plataforma PS4",
+      "price": 43000
+    },
+    {
+      "id": "32",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Jj4OXOFOvQZvw_buj7ftgSNTVUf2CX5PbWLpJkED9qk9hs3ICRT-Ko-DwsuIXtOTtNA&usqp=CAU",
+      "title": "EA Sport FC 25",
+      "description": "Plataforma PS5",
+      "price": 101000
+    },
+    {
+      "id": "33",
+      "image": "https://static.viaaurea.eu/t/game2k-new.cz/images/13697.jpg/o-w:600%7Ch:600/s-b4260b17984b?fn=call_of_duty_black_ops_iii_xone_1.jpg&_ts=1605534563g",
+      "title": "Call of Duty Black Ops III",
+      "description": "Plataforma Xbox One",
+      "price": 87000
+    },
+    {
+      "id": "34",
+      "image": "https://production-gameflipusercontent.fingershock.com/us-east-1:8725a9b1-6043-498b-a460-fc5085793522/57f767e8-fb9a-42d5-a28c-d8001ab6dced/eb6c0a26-cec2-46f0-ac6e-c0b9dd506bcf/640x640.webp",
+      "title": "Fornite",
+      "description": "Plataforma PC",
+      "price": 10000
+    },
+    {
+      "id": "35",
+      "image": "https://i.redd.it/playstation-counter-strike-1-6-source-go-2-original-post-v0-5h235kjlyyec1.jpg?width=794&format=pjpg&auto=webp&s=23e9cdfd65deb7d6036ebbc0fa010ec3792b287f",
+      "title": "Counter Strike GO",
+      "description": "Plataforma PS5",
+      "price": 8000
+    },
+    {
+      "id": "36",
+      "image": "https://i.redd.it/f68iwz4njkw91.jpg",
+      "title": "Uncharted 5",
+      "description": "Plataforma PS5",
+      "price": 72000
+    },
+    {
+      "id": "37",
+      "image": "https://http2.mlstatic.com/D_Q_NP_670139-MLA85296705790_062025-O.webp",
+      "title": "F1 2025",
+      "description": "Plataforma Xbox Serie X",
+      "price": 86000
+    },
+    {
+      "id": "38",
+      "image": "https://p1.akcdn.net/full/1191447598.electronic-arts-ufc-5-xbox-series-x-s.jpg",
+      "title": "UFC 5",
+      "description": "Plataforma Xbox Serie X",
+      "price": 60000
+    },
+    {
+      "id": "39",
+      "image": "https://juegosdigitalesargentina.com/files/images/productos/1651790904-jump-force-xbox-series-xs-0.jpg",
+      "title": "Jump Force",
+      "description": "Plataforma Xbox Serie X y S",
+      "price": 50000
+    },
+    {
+      "id": "40",
+      "image": "https://www.clavecd.es/wp-content/uploads/rust-console-edition-featured-300x300-1.jpg",
+      "title": "Rust",
+      "description": "Plataforma PC",
+      "price": 27000
+    },
+    {
+      "id": "41",
+      "image": "https://cdn.awsli.com.br/22/22652/produto/220955950/capa-wflyav931e.jpg",
+      "title": "Dragon Ball Z Kakarot",
+      "description": "Plataforma PC",
+      "price": 17000
+    },
+    {
+      "id": "42",
+      "image": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/08/caratula-ark-survival-evolved.jpg?tf=1200x",
+      "title": "Ark Survival Evolved",
+      "description": "Plataforma PC",
+      "price": 20000
+    },
+    {
+      "id": "43",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAnSS-LpGf4S3Rulim5x2bTGbiwYon141QgQ&s",
+      "title": "Rainbow 6 Siege X",
+      "description": "Plataforma PC",
+      "price": 23000
+    },
+    {
+      "id": "44",
+      "image": "https://juegosdigitalesargentina.com/files/images/productos/1658270695-forza-horizon-5-xbox-series-xs-0.jpg",
+      "title": "Forza Horizon 5",
+      "description": "Plataforma Xbox Serie X y S",
+      "price": 24000
+    },
+    {
+      "id": "45",
+      "image": "https://gorilagames.com/img/Public/1019/38946-producto-assassins-creed-shadows-for-playstation-gorila-games-1.jpg",
+      "title": "Assassins Creed Shadows",
+      "description": "Plataforma PS5",
+      "price": 43000
+    }
+  ],
+  "carrito": []
+}

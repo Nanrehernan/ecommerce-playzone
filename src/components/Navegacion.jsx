@@ -18,7 +18,7 @@ const Navegacion = () => {
    }
 
    return <>
-      <nav className={css.navbar}>
+      <section className={css.navbar}>
          <button onClick={handleShowMenu} className={css.button_menu}>
             {showMenu ? <Close /> : <Menu />}
          </button>
@@ -28,18 +28,20 @@ const Navegacion = () => {
             <h2 className={css.logo_text}>PlayZone</h2>
          </div>
 
-         <div className={`${css.nav_links} ${showMenu && css.show_menu}`}>
+         <nav className={`${css.nav_links} ${showMenu && css.show_menu}`}>
             <Link href="/">Inicio</Link>
+            <Link href="/acerca_de">Sobre Nosotros</Link>
+            <Link href="/privacidad">Privacidad</Link>
             <Link href="/videojuegos">Video Juegos</Link>
             <Link href="/cartas">Cartas</Link>
             <Link href="/figuras">Figuras</Link>
             <Link href="/contacto">Contacto</Link>
-         </div>
+         </nav>
 
          <button className={css.button_cart} onClick={handleShowCart}>
             <ShoppingCart /> {getQuantity()}
          </button>
-      </nav>
+      </section>
    </>
 }
 
