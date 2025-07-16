@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "server": "npx json-server --watch db.json --port 3000"
+    "server": "npx json-server --watch db.json --port 3000",
+    "wait-and-start-react": "wait-on http://localhost:3000 && npm run dev",
+    "proyecto": "concurrently \"npm run server\" \"npm run wait-and-start-react\""
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -19,9 +21,13 @@
     "@mui/material": "^7.1.1",
     "@splidejs/react-splide": "^0.7.12",
     "axios": "^1.10.0",
+    "concurrently": "^9.2.0",
     "json-server": "^1.0.0-beta.3",
     "next": "15.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "wait-on": "^8.0.3"
   }
 }
